@@ -1,2 +1,2 @@
 # chickly
-start 13.02.23
+start 10.02.23
