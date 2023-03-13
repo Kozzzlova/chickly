@@ -1,0 +1,76 @@
+@import "_null";
+@import "_fonts";
+@import "_header";
+@import "_banner";
+@import "_profit";
+@import "_about";
+@import "_chicks";
+@import "_conditions";
+@import "_how";
+@import "_bloggers";
+@import "_program";
+@import "_honest";
+@import "_review";
+@import "_farm";
+@import "_footer";
+
+
+body {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    height: 100%;
+    
+    
+}
+
+body._lock {
+	overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+@media (max-width: 1200px) {
+
+      
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 479px) {
+    
+}
+
+
+
+    
+
+
+
+

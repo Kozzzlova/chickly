@@ -1,0 +1,233 @@
+.farm {
+
+    // .farm__container
+
+    &__container {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    // .farm__title
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    // .farm__table
+
+    &__table {
+        margin-bottom: 40px;
+    }
+
+    // .farm__button
+
+    &__button {
+        font-size: 18px;
+        color: #FFFFFF;
+        padding: 11px 46px;
+        background: linear-gradient(213.08deg, #70E705 28.11%, #0E6B12 96.2%);
+        border-radius: 100px;
+        display: inline-block;
+
+
+    }
+}
+
+.table-farm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+
+    // .table-farm__item
+}
+.item-farm {
+    display: flex;
+    position: relative;
+    padding: 17px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+
+    // .item-farm__linea
+
+    &__linea {
+        position: absolute;
+        height: 40px;
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.11);
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+    }
+
+    // .item-farm__string
+
+    &__string {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        color: #282828;
+        line-height: 129%;
+    }
+
+    // .item-farm__string-left
+
+    &__string-left {
+        display: flex;
+    }
+
+    // .item-farm__string-right
+
+    &__string-right {
+        display: flex;
+    }
+}
+.string-left {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+
+    // .string-left__image
+
+    &__image {
+        margin-right: 6px;
+    }
+
+    // .string-left__price
+
+    &__price {
+        font-weight: 500;
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-right: 22px;
+    }
+}
+.string-right {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+
+    // .string-right__name
+
+    &__name {
+        margin-left: 22px;
+    }
+
+    // .string-right__image
+
+    &__image {
+        margin-left: 15px;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .item-farm {
+        padding: 12px 14px;
+    }
+
+    .farm__title {
+        margin-bottom: 30px;
+    }
+
+    .string-left__price {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .string-right__image {
+        margin-left: 5px;
+    }
+    .string-right__name {
+        margin-left: 35px;
+    }
+   
+    
+}
+
+@media (max-width: 992px) {
+    .item-farm__string {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-farm__linea {
+        position: absolute;
+        height: 1px;
+        width: 60px;
+        background-color: rgba(0, 0, 0, 0.11);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .item-farm {
+        padding: 10px 30px;
+    }
+
+    .string-right {
+        margin-top: 5px;
+    }
+    .string-left {
+        margin-bottom: 5px;
+    }
+
+    .string-right__name {
+        margin-left: 0px;
+    }
+    .string-right__image {
+        margin-left: 15px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .table-farm {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 12px;
+        width: 100%;
+    }
+
+    .item-farm {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-farm__linea {
+        width: 250px;
+    }
+
+    
+    .string-left__price {
+        font-size: 18px;
+    }
+
+    
+    .string-left {
+        margin-bottom: 11px;
+    }
+    .string-right {
+        margin-top: 11px;
+    }
+
+    .farm__button {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 479px) {
+    
+}

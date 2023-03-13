@@ -1,0 +1,280 @@
+.chicks {
+    padding: 76px 32.5px 115px 32.5px;
+
+    // .chicks__title
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    // .chicks__switcher
+
+    &__switcher {
+        width: 220px;
+        height: 43px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+        border-radius: 50px;
+        position: relative;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;      
+        font-size: 16px;
+        line-height: 129%;
+        color: #282828;
+        cursor: pointer;
+        margin-bottom: 45px;
+        padding: 11px;
+    }
+
+    // .chicks__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 17px;
+        flex-wrap: wrap;
+
+        
+        
+    }
+
+    // .chicks__item
+
+    &__item {
+    }
+}
+
+
+.toggle-btn {
+    padding: 11px;
+    padding-left: 36px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+}
+
+#btn {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 112px;
+    height: 100%;
+    background-color: #F1f1f1;;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.switch-chick {
+
+    // .switch-chick__bnb
+
+    &__bnb {
+        background: url(../image/chicks/coinbnb.png) 0 50%/32px 32px no-repeat;
+    }
+
+    // .switch-chick__busd
+
+    &__busd {
+        background: url(../image/chicks/coinbusd.png) 0 50%/32px 32px no-repeat;
+    }
+}
+
+
+.chicks-item {
+
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+    flex: 0 1 17%;
+    height: auto;
+    padding: 14px 93px 38px 93px;
+    text-align: center;
+    margin: 0 17px; 
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 129%;
+    color: #282828;
+
+    position: relative;
+    margin-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+@media (max-width: 1775px) {
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    font-size: 18px;
+    padding: 14px 74px 35px 74px;
+    margin: 0 12px 35px 12px; 
+}
+
+@media (max-width: 992px) {
+    font-size: 16px;
+}
+@media (max-width: 767px) {
+    font-size: 16px;
+    padding: 14px 35px 22px 35px;
+    margin: 0 5px 30px 5px; 
+}
+@media (max-width: 479px) {
+    font-size: 14px;
+    padding: 11px 25px 15px 25px;
+}
+
+
+   
+
+    // .chicks-item__name
+
+    &__name {
+        font-family: 'Mynerve', cursive;
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 100%;
+        color: #000000;
+        margin-bottom: 9px;
+    }
+
+    // .chicks-item__image
+
+    &__image {
+        position: relative;
+        padding-bottom: 145%;
+        margin-bottom: 10px;
+        width: 98%;
+
+        @media (max-width: 479px) {
+            margin-bottom: 5px;
+            
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            
+        }
+    }
+
+    // .chicks-item__price
+
+    &__price {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+
+
+            @media (max-width: 479px) {
+                width: 16px;
+                height: 16px;
+                margin-left: 3px;
+            }
+        }
+    }
+
+    // .chicks-item__bonus
+
+    &__bonus {
+        width: 125px;
+    }
+
+    // .chicks-item__button
+
+    &__button {
+        position: absolute;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        color: #FFFFFF;
+        background: linear-gradient(213.08deg, #70E705 28.11%, #0E6B12 96.2%);
+        border: 10px solid #FFFFFF;
+        border-radius: 100px;
+        padding: 11px 64px;
+        cursor: pointer;
+        bottom: -25px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        @media(max-width: 1200px) {
+            font-size: 18px;
+            padding: 11px 52px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
+        @media (max-width: 767px) {
+            padding: 8px 40px;
+            border: 5px solid #FFFFFF;
+            bottom: -18px;
+        }
+
+        @media (max-width: 479px) {
+            padding: 5px 35px;
+        }
+
+
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .chicks {
+        padding-bottom: 85px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+   
+}
+
+@media (max-width: 767px) {
+    .chicks__title {
+        margin-bottom: 15px;
+    }
+
+    .chicks-item__name {
+        font-size: 20px;
+    }
+
+    .chicks__body {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    .form-box,
+    .chicks-item__name {
+        display: none;
+    }
+    
+    
+}
+
+

@@ -1,0 +1,307 @@
+.how {
+
+		// .how__container
+
+		&__container {
+		}
+
+		// .how__title
+
+		&__title {
+            margin-bottom: 36px;
+            @media (max-width: 1200px) {
+                margin-bottom: 30px;
+      
+            }   
+		}
+
+		// .how__body
+
+		&__body {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            align-items: center;
+
+             @media (max-width: 992px) {
+               flex-direction: column;
+               margin-bottom: 55px;
+               padding: 30px 60px 0 60px;
+      
+            }  
+             @media (max-width: 767px) {
+               justify-content: center;
+      
+            }  
+		}
+}
+
+.body-how {
+
+    height: 440px;
+    margin: 0 -15px;
+    margin-bottom: 102px;
+
+     @media (max-width: 1200px) {
+        height: 375px;
+        width: 992px;
+        margin: 0 auto;
+        padding: 20px;
+      
+        }
+
+        @media (max-width: 992px) {
+    
+                height: auto;
+                margin-top: 50px;
+                width: 612px;
+                margin-bottom: 50px;    
+        }
+        @media (max-width: 767px) {
+                width: 447px; 
+        }
+        @media (max-width: 479px) {
+                width: 290px; 
+        }
+
+
+		// .body-how__item
+
+		&__item {
+            
+            position: relative;
+            z-index: 10;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+             color: #282828;
+             line-height: 129%;
+             background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06), 8px 8px 8px rgba(87, 61, 129, 0.1), 8px 8px 8px rgba(247, 223, 116, 0.2);
+            border-radius: 50%;;
+            padding: 105px 75px 78px 75px;
+            align-self:flex-start;
+
+            @media (max-width: 1200px) {
+                height: 280px;
+                width: 280px;
+                padding:75px 50px 55px 50px;
+                justify-content: flex-start;
+                
+            }   
+
+             @media (max-width: 767px) {
+            align-self:auto;
+            }
+
+            &:first-child {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background: url(../image/how/stepone-add.png) 0 0/ auto no-repeat;
+                    top: -60px;
+                    left: 28%;
+                    width: 100%;
+                    height: 100%;
+
+                     @media (max-width: 1200px) {
+                        background: url(../image/how/stepone-add.png) 0 0/125px 125px no-repeat;
+                        left: 30%;
+                    }  
+
+                     @media (max-width: 992px) {
+                        top: -42px;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background: url(../image/how/1.png) 0 0/ auto no-repeat;
+                    bottom: -40%;
+                    left: 65%;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &:last-child {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background: url(../image/how/stepthree-add.png) 0 0/ auto no-repeat;
+                    top: -60px;
+                    left: 28%;
+                    width: 100%;
+                    height: 100%;
+
+                    @media (max-width: 1200px) {
+                        background: url(../image/how/stepone-add.png) 0 0/125px 125px no-repeat;
+                            left: 30%;
+                        }  
+
+                        @media (max-width: 992px) {
+                            top: -42px;
+                        }
+
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background: url(../image/how/3.png) 0 0/ auto no-repeat;
+                    bottom: -40%;
+                    left: 65%;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+           
+            
+		}
+
+		// .body-how__image
+
+		&__image {
+            
+            align-self: flex-end;
+            position: relative;
+            z-index: 5;
+
+             @media (max-width: 992px) {
+                width: 280px;
+            }
+             @media (max-width: 767px) {
+                align-self:auto;
+                
+            }
+
+           
+            &:before {
+                content:'';
+                position: absolute;
+                background: url(../image/how/ellipse-up.png) 0 0/ auto no-repeat;
+                z-index: -2;
+                top: 40px;
+                left: 160px;
+                width: 100%;
+                height: 100%;
+                opacity: .99;
+
+                 @media (max-width: 992px) {
+                    top: 179px;
+                    left: -158px;
+                }  
+                 @media (max-width: 767px) {
+                    top: 163px;
+                    left: 5px;
+                    transform: rotate(116deg);
+                }  
+
+                
+                
+            }
+            &:after {
+                content:'';
+                position: absolute;
+                background: url(../image/how/ellipse-down.png) 0 0/ auto no-repeat;
+                z-index: -2;
+                bottom: -20px;
+                left: -150px;
+                width: 100%;
+                height: 100%;
+                opacity: .99;
+
+                 @media (max-width: 1200px) {
+                    bottom: 25px;
+                }   
+                 @media (max-width: 992px) {
+                    bottom: 192px;
+                }   
+                @media (max-width: 767px) {
+                    left: 18px;
+                    transform: rotate(57deg);
+                }
+                
+                
+            }
+            
+		}
+}
+.item-how {
+
+    flex: 0 1 350px;
+    margin: 0 15px;
+
+    &:nth-child(2) {
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+            }
+    }
+
+        @media (max-width: 1200px) {
+
+                 flex: 0 1 280px;   
+        }  
+
+        @media (max-width: 992px) {
+            
+        }
+            
+    
+
+		// .item-how__title
+
+		&__title {
+            font-weight: 500;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 19px;
+
+            @media (max-width: 1200px) {
+            
+                font-size: 20px;
+            }
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+           
+
+		}
+
+		// .item-how__text
+
+		&__text {
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 25px; 
+            width: 170px;
+		}
+
+		// .item-how__button
+
+		&__button {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            color: #FFFFFF;
+            padding: 11px 54px;
+            background: linear-gradient(213.08deg, #70E705 28.11%, #0E6B12 96.2%);
+            border-radius: 100px;
+             @media (max-width: 1200px) {
+            
+                font-size: 16px;
+                padding: 11px 40px;
+            }
+		}
+}
+
+.button-hidden {
+    visibility: hidden;
+}

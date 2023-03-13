@@ -1,0 +1,152 @@
+.bloggers {
+
+    // .bloggers__container
+
+    &__container {
+        margin-bottom: 106px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // .bloggers__title
+
+    &__title {
+        text-transform: capitalize;
+        margin-bottom: 27px;
+    }
+
+    // .bloggers__body
+
+    &__body {
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -15px;
+        margin-bottom: 62px;
+
+        
+    }
+
+    // .bloggers__button
+
+    &__button {
+        a {
+            text-align: center;
+            font-size: 18px;
+            color: #FFFFFF;
+            padding: 11px 48px;
+            background: linear-gradient(213.08deg, #70E705 28.11%, #0E6B12 96.2%);
+            border-radius: 100px;
+        }
+        
+        
+    }
+}
+
+.body-bloggers {
+
+    // .body-bloggers__item
+
+    &__item {
+        flex: 0 1 33.333%;
+        margin: 0 15px;
+        position: relative;
+        
+
+        img {
+            
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+       
+    }
+}
+
+.item-bloggers {
+    
+    &__lang {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 35%);
+        width: 78px;
+        height: 78px;
+       
+
+        img {
+            border: 5px solid #FFFFFF;
+            border-radius: 50%;
+                     
+        }
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .item-bloggers__lang {
+        width: 65px;
+        height: 65px;
+        img {
+            border: 3px solid #FFFFFF;
+                     
+        }
+    }
+
+    .bloggers__body {
+        margin: 0 -10px 50px -10px ;
+    }
+
+   
+    .body-bloggers__item {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bloggers__container {
+        margin-bottom: 80px;
+    }
+
+    .bloggers__body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .body-bloggers__item {
+        margin: 0 25px 15px 25px;
+    }
+
+    .bloggers__button {
+        a {
+            font-size: 16px;
+            padding: 10px 44px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .bloggers__body {
+        flex-wrap: no-wrap;
+        flex-direction: column;
+    }
+    .body-bloggers__item {
+        margin: 0 25px 25px 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .bloggers__container {
+        margin-bottom: 55px;
+    }
+}
+
+
