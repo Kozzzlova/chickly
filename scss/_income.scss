@@ -1,0 +1,333 @@
+.wrapper-income {
+      position: relative;
+    .nav-menu__connect {
+        margin-left: 400px;
+    }
+
+   
+}
+
+.income-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 35px;
+    
+
+    &__chicken {
+        position: absolute;
+        top: 158px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }}
+
+    .chick-income {
+        position: relative;
+        z-index: 6;
+    }
+
+
+    .chick-income__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-9%, -10%);
+        z-index: 5;
+        width: 372px;
+        height: 372px;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: inset 0px 0px 32px rgba(255, 255, 255, 0.04), inset 0px 1px 4px rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(45px);
+        border-radius: 50%;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            right: 25%;
+            background: url(../image/faq/coin-big.png) 0 0/auto no-repeat;
+            transform:rotateX(-90deg) translateZ(100px) rotate(180deg);
+            animation: Orbita 15s linear infinite;
+            // animation: Razmer 15s linear infinite;
+            
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            z-index: 8;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            right: 25%;
+            background: url(../image/faq/coin-small.png) 0 0/auto no-repeat;
+            transform:rotateX(90deg) translateZ(100px) rotate(-180deg);
+            animation: Orbita2 15s linear infinite;
+            // animation: Razmer 15s linear infinite;
+            
+        }
+    }
+
+
+    .scheme {
+
+		// .scheme__container
+
+		&__container {
+		}
+
+		// .scheme__title
+
+		&__title {
+            margin-bottom: 68px;
+		}
+
+		// .scheme__body
+
+		&__body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 40px;
+            margin-bottom: 29px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            position: relative;
+		}
+
+		// .scheme__area
+
+		&__area {
+            
+            background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+            border-radius: 50px;
+            padding: 20px 59px ;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            flex-direction: column;
+            color: #282828;
+            text-align: center;
+            flex: 0 1 48.5%;
+		}
+
+            &__plus {
+                  position: absolute;
+                  top: 35%;
+                  left: 50%;
+                  transform: translate(-50%, 0);
+                  z-index: 5;
+            }
+}
+
+.area-scheme {
+
+		// .area-scheme__title
+
+		&__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 129%;
+            margin-bottom: 28px;
+           
+		}
+
+		// .area-scheme__name
+
+		&__name {
+		}
+
+		// .area-scheme__info
+
+		&__info {
+            margin-left: 6px;
+            width: 20px;
+            height: 20px;
+            align-self: flex-start;
+		}
+
+		// .area-scheme__calc
+
+		&__calc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+		}
+
+		// .area-scheme__plus
+
+		&__plus {
+		}
+
+		// .area-scheme__input
+
+		&__input {
+            margin: 0 15px 0 21px;
+            background: rgba(199, 199, 199, 0.2);
+            border-radius: 100px;
+            padding: 11px 70px 11px 20px;
+		}
+
+		// .area-scheme__cur
+
+		&__cur {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 100%;
+            margin-right: 20px;
+		}
+
+		// .area-scheme__minus
+
+		&__minus {
+            transform: translate(0, -25%);
+		}
+
+		// .area-scheme__result
+
+		&__result {
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 129%;
+            background: linear-gradient(213.08deg, #FEBE01 28.11%, #F37502 96.2%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+		}
+}
+
+.daily {
+      
+      
+
+		// .daily__bg
+
+		&__bg {
+                  display: none;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+
+                  img {
+                       
+                  }
+		}
+
+		// .daily__container
+
+		&__container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  color:#282828;
+                  line-height: 1.29;
+                  font-weight: 400;
+                  width: 730px;
+                  margin: 0 auto;
+		}
+
+		// .daily__text
+
+		&__text {
+                  font-size: 14px;
+                  opacity: 0.5;
+                  padding: 0 108px;
+                  margin-bottom: 26px;
+		}
+
+		// .daily__equal
+
+		&__equal {
+                  margin-bottom: 11px;
+		}
+
+		// .daily__result
+
+		&__result {
+                  font-weight: 700;
+                  font-size: 55px;
+                  line-height: 112%;
+                  margin-bottom: 13px;
+
+                  span {
+                      
+                  background-color: #F37502;
+                  background-image: linear-gradient(213.08deg, #FEBE01 28.11%, #F37502 96.2%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  }
+		}
+
+		// .daily__amount
+
+		&__amount {
+                  display: flex;
+                  margin-bottom: 30px;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 30px 0;
+                  background: #FFFCF2;
+                  border-radius: 50px;
+
+                  input {
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+                        border-radius: 50px;
+                        font-size: 18px;
+                        padding: 20px;
+                        padding-right: 50px;
+                        opacity: 0.6;
+                        margin: 0 30px;
+                  }
+
+                  span {
+                        font-weight: 500;
+                        font-size: 30px;
+                        background: linear-gradient(213.08deg, #FEBE01 28.11%, #F37502 96.2%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                        margin: 0 30px;
+                        padding: 0 15px;
+                  }
+		}
+
+		// .daily__description
+
+		&__description {
+                  font-size: 22px;
+                  padding: 0 154px;
+                  margin-bottom: 19px;
+		}
+
+		// .daily__button
+
+		&__button {
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 100%;
+                  color: #FFFFFF;
+                  padding: 11px 50px;
+                  background: linear-gradient(237.19deg, #FFEB3C 0%, #FF881B 105.77%);
+                  border-radius: 100px;
+                  margin-bottom: 25px;
+
+
+		}
+}
+

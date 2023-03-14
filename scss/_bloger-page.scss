@@ -1,0 +1,49 @@
+.wrapper-blogers {
+    .body-bloggers__item {
+        margin: 0;
+    }
+}
+
+
+.all-blogers {
+
+		// .all-blogers__container
+
+		&__container {
+            padding: 82px 0;
+		}
+}
+.container {
+}
+.blogers-all {
+
+		// .blogers-all__title
+
+		&__title {
+            margin-top: 55px;
+            margin-bottom: 27px;
+		}
+
+		// .blogers-all__body
+
+		&__body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+		}
+}
+.body-bloggers {
+
+		// .body-bloggers__item
+
+		&__item {
+		}
+}
+.item-bloggers {
+
+		// .item-bloggers__lang
+
+		&__lang {
+		}
+}
